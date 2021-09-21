@@ -37,6 +37,51 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
     color: white;
 }
 
+/* Spinner*/
+
+.spinner{
+    width: 450px;
+    margin: 0;
+    position: relative;
+    text-align: justify;
+}
+
+.spinner-custom{
+    cursor: progress;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: green;
+        opacity: 0.8;
+    }
+
+    &::after{
+        box-sizing: border-box;
+        z-index: 10002;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    margin: -25px 0 0 -25px;
+    border: 3px solid orange;
+    border-top: 3px solid blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spinner-custom 1s linear infinite;
+    }
+    @keyframesspinner-custom {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+}
 
 /* Header */
 
@@ -141,6 +186,8 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
         flex-direction: column;
     }
 }
+/* Restaurant */
+
 
 /*Footer */ 
 
@@ -190,7 +237,7 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
 /* Responsive*/ 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
 
     .process__choice {
         width: 100%;
@@ -209,7 +256,14 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
-                max-width: 900px;
+                max-width: auto;
             }
         }
     }
+
+    .footerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
