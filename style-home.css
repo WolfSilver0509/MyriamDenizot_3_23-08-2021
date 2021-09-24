@@ -179,7 +179,6 @@ body {
 }
 
 /* Restaurant */
-
 .restaurant__cardS {
   display: grid;
   grid-template-rows: repeat(4, 1fr);

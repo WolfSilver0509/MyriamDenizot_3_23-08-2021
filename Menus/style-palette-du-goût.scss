@@ -1,0 +1,157 @@
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
+}
+
+@mixin button-style {
+    opacity: 1;
+    background: $gradient;
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
+}
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+    @include flexbox-center;
+    flex-direction: column;
+    
+}
+
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Header */ 
+
+header {
+    z-index: 10;
+    background: white;
+    width: 100%;
+    .header {
+        box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
+        position: relative;
+        @include flexbox-center();
+        height: 80px;
+        width: 100%;
+        &__arrow-back {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 35px; top: 30%;
+            font-size: 30px;
+            
+        }
+        &__logo {
+            font-family: 'Shrikhand', cursive;
+            margin: 0;
+            & a {
+                color: #000;
+            }
+        }
+
+        &__color{
+            color: black;
+        }
+    }
+}
+
+/*Images*/
+
+.img {
+    width: 100%;
+    height: 50vh;
+    &__image {
+        margin-top: -80px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*Menus */
+
+#menus {
+    background: white;
+    width: 100%;
+    @include flexbox-center;
+}
+
+.menu {
+    margin-top: -200px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1230px;
+    border-radius: 30px 30px 0 0;
+    background-color: #F6F6F6;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &__title {
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+}
+
+
+/*Footer */
+.footer {
+    width: 100%;
+    background-color: #353535;
+    @include flexbox-center;
+    &__bloc {
+        display: inline;
+        padding: 0 40px;
+        width: 100%;
+        max-width: 1200px;
+        & .footerLogo {
+            font-family: 'Shrikhand', cursive;
+            color: white;
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        &-links {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+        }
+        &-linkA {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            color: white;
+            height: 30px;
+            cursor: pointer;
+            &:hover .footer__bloc-link__title {
+                text-decoration: underline;
+            }
+            & i {
+             margin-right: 7px;
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
