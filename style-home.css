@@ -183,12 +183,10 @@ body {
   margin: 0;
   background: #f6f6f6;
   padding: 20px;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .restaurant__cardS {
@@ -222,6 +220,7 @@ body {
   color: #1b6150;
   padding: 10px 20px;
   margin: 0;
+  text-align: center;
 }
 .restaurant__card:hover {
   transition: 0.5s;

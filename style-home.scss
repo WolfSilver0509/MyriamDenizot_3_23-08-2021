@@ -196,10 +196,8 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
     margin: 0;
     background: #f6f6f6;
     padding: 20px;
-    max-width: 1200px;
     @include flexbox-center;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .restaurant {
@@ -230,6 +228,7 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
                 color: #1b6150;
                 padding: 10px 20px;
                 margin: 0;
+                text-align: center;
             }
         }
         &:hover {

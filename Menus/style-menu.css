@@ -310,7 +310,6 @@ header .header__color {
   display: inline;
   padding: 0 40px;
   width: 100%;
-  max-width: 1200px;
 }
 .footer__bloc .footerLogo {
   font-family: "Shrikhand", cursive;
@@ -341,4 +340,37 @@ header .header__color {
 .footer__bloc-linkA__title {
   font-size: 16px;
   font-weight: 400;
-}/*# sourceMappingURL=style-palette-du-goût.css.map */
+}
+
+@media screen and (min-width: 1100px) {
+  .menu {
+    margin-top: -60px;
+  }
+
+  .menu__full {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .img__image {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer__bloc {
+    margin-bottom: 15px;
+  }
+  .footer__bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: auto;
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style-menu.css.map */
