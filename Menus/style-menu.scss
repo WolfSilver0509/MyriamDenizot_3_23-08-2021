@@ -339,6 +339,10 @@ header {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr;
+
+        &__card{
+            width: 350px;
+        }
     }
     .img__image {
             margin-top: 0;
