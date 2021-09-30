@@ -98,7 +98,7 @@ body {
   max-width: 250px;
   margin: 0;
 }
-.menu__text {
+.menu__p1 {
   text-align: center;
 }
 .menu__button {
@@ -164,7 +164,7 @@ body {
   background-color: #9356DC;
   color: white;
   position: absolute;
-  padding: 2px 6px 2px 6px;
+  padding: 3px 8px 3px 8px;
   border-radius: 200px;
   transform: translateX(-50%);
 }
@@ -226,6 +226,7 @@ body {
   transition: 0.5s;
   transform: scale(1.25);
   box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
+  z-index: 2;
 }
 .restaurant__card-picture {
   width: 100%;
