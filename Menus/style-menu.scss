@@ -109,6 +109,29 @@ header {
         &__title {
             font-family: 'Shrikhand', cursive;
         }
+
+        &__heart {
+            .heart {
+                width: 30px;
+                stroke-width: 30;
+                stroke: black;
+                fill: white;
+                cursor: pointer;
+              }
+              .heart-full {
+              position: absolute;
+              fill: url(#text-fill);
+              stroke: none;
+              }
+              .heart-empty {
+                position: relative; 
+                &:hover {
+                  opacity: 0;
+                  transition: 0.5s;
+                }
+              
+            }
+        }
     }
 
     &__full {
@@ -249,43 +272,47 @@ header {
       }
       
       .appears-with-opacity {
-            animation: opacity 1s both;
+            animation: opacity 2s both;
     }
     
-    #case-1 {
+    #card-1 {
         animation-delay: 0.1s;
     }
     
-    #case-2 {
+    #card-2 {
         animation-delay: 0.3s;
     }
     
-    #case-3 {
+    #card-3 {
         animation-delay: 0.5s;
     }
     
-    #case-4 {
+    #card-4 {
         animation-delay: 0.7s;
     }
     
-    #case-5 {
+    #card-5 {
         animation-delay: 0.9s;
     }
     
-    #case-6 {
+    #card-6 {
         animation-delay: 0.11s;
     }
     
-    #case-7 {
+    #card-7 {
         animation-delay: 0.13s;
     }
     
-    #case-8 {
+    #card-8 {
         animation-delay: 0.15s;
     }
     
-    #case-9 {
+    #card-9 {
         animation-delay: 0.17s;
+    }
+
+    #card-10 {
+        animation-delay: 0.20s;
     }
 
 
@@ -339,10 +366,6 @@ header {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr;
-
-        &__card{
-            width: 350px;
-        }
     }
     .img__image {
             margin-top: 0;
@@ -368,4 +391,12 @@ header {
         justify-content: center;
         align-items: center;
     }
+}
+
+@media screen and (min-width:390px) {
+
+    .menu__card{
+        width: 350px;
+    }
+    
 }
