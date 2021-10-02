@@ -359,7 +359,6 @@ body {
 .footer__bloc-links {
   display: inline-flex;
   flex-direction: column;
-  width: auto;
 }
 .footer__bloc-linkA {
   display: inline-flex;
@@ -414,7 +413,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    max-width: auto;
   }
 
   .footerLogo {

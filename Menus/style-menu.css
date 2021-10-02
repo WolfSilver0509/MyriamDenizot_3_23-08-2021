@@ -389,7 +389,6 @@ header .header__color {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    max-width: auto;
   }
 
   .footerLogo {
