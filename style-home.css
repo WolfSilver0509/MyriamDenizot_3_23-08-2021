@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px solid transparent;
+  border: 15px solid transparent;
   border-top: 15px solid #9356DC;
   border-bottom: 15px solid #FF79DA;
   border-radius: 30%;
@@ -190,6 +190,9 @@ body {
 }
 .process__title {
   margin: 0;
+}
+.process__p {
+  padding-right: 10px;
 }
 .process__choice {
   display: flex;
