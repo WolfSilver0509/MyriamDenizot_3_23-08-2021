@@ -240,7 +240,7 @@ header .header__color {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scale(1.1);
   }
 }
 @keyframes slide-left {
@@ -248,7 +248,7 @@ header .header__color {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scale(1.1);
   }
 }
 @-webkit-keyframes opacity {

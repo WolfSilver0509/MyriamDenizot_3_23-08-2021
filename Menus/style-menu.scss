@@ -173,7 +173,7 @@ header {
             &:hover .validation__box {
                 @include flexbox-center;
                 animation: slide-left 0.5s ease ;
-                transform-origin: left;
+                transform-origin: right;
             }
             &:hover .menu__card__price {
                 padding-right: 70px;
@@ -256,7 +256,7 @@ header {
                   transform: scaleX(0);
         }
         100% {
-                  transform: scaleX(50px);
+                  transform: scale(1.1);
         }
       }
       
